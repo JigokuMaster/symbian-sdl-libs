@@ -1,0 +1,33 @@
+ZDIR=$(EPOCROOT)\epoc32\data\z
+TARGETDIR=$(ZDIR)\resource\apps
+SOURCE_PATH=../gfx
+SOURCE=$(SOURCE_PATH)/pointer
+FNAME=sdltest
+RESOURCE :
+	bmconv /h$(FNAME).mbg $(FNAME).mbm \
+	    	/c16$(SOURCE).bmp /8$(SOURCE)-alpha.bmp
+
+
+  
+	    	
+do_nothing :
+	@rem do_nothing
+
+MAKMAKE : do_nothing
+
+BLD : do_nothing
+
+CLEAN : do_nothing
+
+LIB : do_nothing
+
+CLEANLIB : do_nothing
+
+FREEZE : do_nothing
+
+SAVESPACE : do_nothing
+
+RELEASABLES :
+	@echo $(ICONTARGETFILENAME)
+FINAL : do_nothing
+	 

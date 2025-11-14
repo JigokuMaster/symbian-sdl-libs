@@ -1,0 +1,10 @@
+#include <appinfo.rh>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xe0001018
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file = "testsprite";
+	group_name = "SDL test";
+	}

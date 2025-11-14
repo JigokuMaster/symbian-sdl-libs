@@ -1,0 +1,26 @@
+
+
+TARGET testalpha.exe
+TARGETTYPE exe
+UID 0 0xe0001004
+CAPABILITY ReadUserData WriteUserData
+EPOCHEAPSIZE 1000000 20000000
+
+USERINCLUDE ..\..\..\include ..\..\..\test 
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc ..\..\..\include 
+SOURCEPATH ..\..\..\test
+SOURCE testalpha.c
+
+SOURCEPATH .
+START RESOURCE testalpha_reg.rss
+TARGETPATH \private\10003a3f\apps
+END
+
+LIBRARY euser.lib
+LIBRARY sdl.lib
+LIBRARY sdlexe.lib
+LIBRARY estlib.lib
+LIBRARY libm.lib
+
+STATICLIBRARY sdlmain.lib
+

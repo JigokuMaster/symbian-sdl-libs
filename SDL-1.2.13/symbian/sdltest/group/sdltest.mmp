@@ -1,0 +1,62 @@
+TARGET		sdltest.exe
+TARGETTYPE      exe
+CAPABILITY 	ReadUserData WriteUserData //LocalServices NetworkServices
+UID		0 0xb22e6cf1
+
+
+epocstacksize	  0x8000
+epocheapsize 0x5000 0x1000000
+
+
+#define OPENC OPENC
+
+//MACRO USE_VIRTUALMOUSE
+//MACRO USE_PARAMS_DIALOG
+
+SOURCEPATH	..\src
+SOURCE		sdlexe.cpp
+SOURCE		graywin.c
+
+SOURCEPATH	..\data
+START RESOURCE	sdltest.rss
+HEADER
+TARGETPATH	\resource\apps
+END
+
+
+SOURCEPATH	..\data
+START RESOURCE	sdltest_reg.rss
+#ifdef winscw
+targetpath	\private\10003a3f\apps
+#else
+targetpath	\private\10003a3f\import\apps
+#endif
+END //resource
+
+SYSTEMINCLUDE	\epoc32\include //..\inc
+#ifdef OPENC
+MACRO OPENC
+SYSTEMINCLUDE	\epoc32\include\stdapis
+#else
+SYSTEMINCLUDE	\epoc32\include\libc
+#endif
+SYSTEMINCLUDE	\epoc32\include\SDL
+//SYSTEMINCLUDE	..\..\..\include
+
+LIBRARY		euser.lib fbscli.lib ws32.lib  gdi.lib
+LIBRARY		mediaclientaudiostream.lib
+
+LIBRARY        avkon.lib efsrv.lib bafl.lib apparc.lib apgrfx.lib 
+LIBRARY        eikcore.lib cone.lib bitgdi.lib scdv.lib hal.lib
+LIBRARY        flogger.lib
+
+#ifdef OPENC
+LIBRARY   libc.lib
+LIBRARY	  libm.lib
+#else
+LIBRARY 	estlib.lib 
+#endif
+
+STATICLIBRARY 	nsdl.lib
+
+

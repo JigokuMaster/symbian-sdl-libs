@@ -1,0 +1,38 @@
+PRJ_PLATFORMS
+
+
+PRJ_EXPORTS
+..\..\..\test\sample.bmp \EPOC32\winscw\c\Private\e000101c\sample.bmp
+..\..\..\test\sample.wav \EPOC32\winscw\c\Private\e0001003\sample.wav
+..\..\..\test\icon.bmp \EPOC32\winscw\c\Private\e0001004\icon.bmp
+..\..\..\test\sample.bmp \EPOC32\winscw\c\Private\e0001006\sample.bmp
+..\..\..\test\moose.dat \EPOC32\winscw\c\Private\e0001013\moose.dat
+..\..\..\test\sample.bmp \EPOC32\winscw\c\Private\e0001014\sample.bmp
+..\..\..\test\sail.bmp \EPOC32\winscw\c\Private\e0001015\sail.bmp
+..\..\..\test\icon.bmp \EPOC32\winscw\c\Private\e0001018\icon.bmp
+
+
+PRJ_MMPFILES
+checkkeys.mmp
+graywin.mmp
+loopwave.mmp
+testalpha.mmp
+testbitmap.mmp
+testblitspeed.mmp
+testcursor.mmp
+testerror.mmp
+testfile.mmp
+testgamma.mmp
+testkeys.mmp
+testoverlay2.mmp
+testoverlay.mmp
+testpalette.mmp
+testplatform.mmp
+testsprite.mmp
+testtimer.mmp
+testver.mmp
+testvidinfo.mmp
+testwin.mmp
+testwm.mmp
+threadwin.mmp
+testloadso.mmp

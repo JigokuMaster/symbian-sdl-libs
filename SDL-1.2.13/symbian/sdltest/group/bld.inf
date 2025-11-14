@@ -1,0 +1,7 @@
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_MMPFILES
+gnumakefile pointer.mk
+sdltest.mmp
+

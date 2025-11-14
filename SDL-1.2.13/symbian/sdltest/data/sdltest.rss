@@ -1,0 +1,72 @@
+//  RESOURCE IDENTIFIER
+NAME    SDLT
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <avkon.mbg>
+#include <eikon.hrh>
+#include <appinfo.rh>
+
+
+RESOURCE RSS_SIGNATURE {}
+
+RESOURCE TBUF { buf=""; }
+    
+   
+RESOURCE EIK_APP_INFO
+{
+    menubar=r_sdltest_menubar;
+    cba=R_AVKON_SOFTKEYS_EMPTY;
+}
+
+ 
+RESOURCE DIALOG r_parameditor
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items = 
+    {
+	DLG_LINE {
+	    type = EAknCtQuery;
+	    id = 1000;
+	    control = AVKON_DATA_QUERY
+	    {
+		    layout = EDataLayout;
+		    control = EDWIN {
+					lines = 1; 
+					width = 256;
+					maxlength = 255;
+					};
+			};
+	    }
+	};
+}
+
+RESOURCE MENU_BAR r_sdltest_menubar
+{
+    titles=
+    {
+	MENU_TITLE
+	{ 
+	    menu_pane=R_AVKON_MENUPANE_EMPTY;
+	}
+    };
+}
+
+
+RESOURCE MENU_PANE r_sdltest_menupane
+{
+}
+
+RESOURCE LOCALISABLE_APP_INFO r_sdltest_localisable_app_info
+{
+    short_caption = "sdltest";
+    caption_and_icon = CAPTION_AND_ICON_INFO
+        {
+            caption = "sdltest";
+            number_of_icons = 1;
+            icon_file = "\\resource\\apps\\sdltest_aif.mif";        
+        };
+}
+    
+
