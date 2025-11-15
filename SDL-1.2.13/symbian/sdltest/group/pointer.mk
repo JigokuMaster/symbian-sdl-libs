@@ -4,7 +4,7 @@ SOURCE_PATH=../gfx
 SOURCE=$(SOURCE_PATH)/pointer
 FNAME=sdltest
 RESOURCE :
-	bmconv /h$(FNAME).mbg $(FNAME).mbm \
+	bmconv $(SOURCE_PATH)/$(FNAME).mbm \
 	    	/c16$(SOURCE).bmp /8$(SOURCE)-alpha.bmp
 
 

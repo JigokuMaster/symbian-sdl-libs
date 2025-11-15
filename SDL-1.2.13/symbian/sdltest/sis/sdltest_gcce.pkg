@@ -26,5 +26,5 @@
 "\epoc32\data\z\resource\apps\sdltest.rsc"-"!:\resource\apps\sdltest.rsc"
 "\epoc32\data\z\private\10003a3f\import\apps\sdltest_reg.rsc"-"!:\private\10003a3f\import\apps\sdltest_reg.rsc"
 ;"\epoc32\data\z\resource\apps\sdltest.mbm"-"!:\resource\apps\sdltest.mbm"
-"..\group\sdltest.mbm"-"!:\resource\apps\sdltest.mbm"
+"..\gfx\sdltest.mbm"-"!:\resource\apps\sdltest.mbm"
 "..\gfx\sdltest_aif.mif"-"!:\resource\apps\sdltest_aif.mif"
