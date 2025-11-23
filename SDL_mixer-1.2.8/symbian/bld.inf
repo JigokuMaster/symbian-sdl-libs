@@ -1,0 +1,8 @@
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\SDL_mixer.h SDL\SDL_mixer.h
+PRJ_MMPFILES
+sdl_mixer.mmp
+

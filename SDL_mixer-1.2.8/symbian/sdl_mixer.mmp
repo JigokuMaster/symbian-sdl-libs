@@ -1,0 +1,65 @@
+#include "sdl_mixer.mmh"
+
+TARGET              SDL_mixer.lib
+TARGETTYPE          lib
+
+MACRO CMD_MUSIC
+MACRO WAV_MUSIC
+
+USERINCLUDE ..
+SYSTEMINCLUDE \epoc32\include
+#ifdef OPENC
+MACRO OPENC
+SYSTEMINCLUDE \epoc32\include\stdapis 
+#else
+MACRO SYMBIANC
+SYSTEMINCLUDE \epoc32\include\libc
+#endif
+
+SYSTEMINCLUDE \epoc32\include\SDL
+SYSTEMINCLUDE \epoc32\include\vorbis
+SYSTEMINCLUDE \epoc32\include\ogg
+SYSTEMINCLUDE ..\timidity
+
+SOURCEPATH  ..
+
+SOURCE      mixer.c
+SOURCE      music.c
+//SOURCE    playwave.c
+SOURCE      wavestream.c
+SOURCE      effects_internal.c
+SOURCE      effect_position.c
+SOURCE      effect_stereoreverse.c
+SOURCE      load_aiff.c
+SOURCE      load_voc.c
+
+
+// OGG stuff
+
+MACRO OGG_MUSIC
+
+SOURCE      load_ogg.c
+SOURCE      dynamic_ogg.c
+SOURCE      music_ogg.c
+
+// MIDI
+
+
+MACRO MID_MUSIC
+MACRO USE_TIMIDITY_MIDI
+
+SOURCEPATH ..\timidity
+
+SOURCE common.c
+SOURCE instrum.c
+SOURCE filter.c
+SOURCE timidity.c
+SOURCE mix.c
+SOURCE resample.c
+SOURCE output.c
+SOURCE sdl_a.c
+SOURCE playmidi.c
+SOURCE tables.c
+SOURCE sdl_c.c
+SOURCE readmidi.c
+SOURCE ctrlmode.c
