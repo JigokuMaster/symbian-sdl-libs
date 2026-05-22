@@ -1,0 +1,9 @@
+PRJ_PLATFORMS
+GCCE
+
+PRJ_EXPORTS
+..\SDL_image.h SDL\SDL_image.h
+
+PRJ_MMPFILES
+
+SDL_image.mmp

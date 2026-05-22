@@ -1,0 +1,6 @@
+PRJ_MMPFILES
+libpng.mmp
+
+PRJ_EXPORTS
+../png.h     libpng-1.2.18/png.h
+../pngconf.h libpng-1.2.18/pngconf.h

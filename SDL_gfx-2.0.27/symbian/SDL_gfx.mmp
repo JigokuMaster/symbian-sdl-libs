@@ -1,0 +1,11 @@
+
+TARGET SDL_gfx.lib
+TARGETTYPE lib
+
+MACRO OPENC
+
+USERINCLUDE ..
+SYSTEMINCLUDE /epoc32/include /epoc32/include/stdapis /epoc32/include/SDL
+sourcepath ..
+source SDL_framerate.c SDL_gfxBlitFunc.c SDL_gfxPrimitives.c SDL_imageFilter.c SDL_rotozoom.c
+

@@ -1,0 +1,14 @@
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../SDL_framerate.h SDL/SDL_framerate.h
+../SDL_gfxBlitFunc.h SDL/SDL_gfxBlitFunc.h
+../SDL_gfxPrimitives_font.h SDL/SDL_gfxPrimitives_font.h
+../SDL_gfxPrimitives.h SDL/SDL_gfxPrimitives.h
+../SDL_imageFilter.h SDL/SDL_imageFilter.h
+../SDL_rotozoom.h SDL/SDL_rotozoom.h
+
+PRJ_MMPFILES
+SDL_gfx.mmp

@@ -1,0 +1,44 @@
+
+TARGET          SDL_image.lib
+TARGETTYPE      lib
+
+
+SYSTEMINCLUDE	/epoc32/include /epoc32/include/stdapis
+SYSTEMINCLUDE	/epoc32/include/SDL
+SYSTEMINCLUDE	/epoc32/include/libpng-1.2.18
+USERINCLUDE	..
+
+MACRO		OPENC
+MACRO		LOAD_BMP
+MACRO		LOAD_GIF
+MACRO		LOAD_PCX
+MACRO		LOAD_PPM
+MACRO		LOAD_TGA
+MACRO		LOAD_XPM
+MACRO		LOAD_LBM
+MACRO		LOAD_PNM
+MACRO		LOAD_XCF
+//MACRO		LOAD_JPG
+//MACRO		FAST_JPEG
+MACRO		LOAD_PNG
+//MACRO		LOAD_TIF
+
+SOURCEPATH	..
+
+SOURCE          IMG.c
+SOURCE          IMG_bmp.c
+SOURCE          IMG_gif.c
+SOURCE          IMG_jpg.c
+SOURCE          IMG_lbm.c
+SOURCE          IMG_pcx.c
+SOURCE          IMG_png.c
+SOURCE          IMG_pnm.c
+SOURCE          IMG_tga.c
+SOURCE          IMG_tif.c
+SOURCE          IMG_webp.c
+SOURCE          IMG_xcf.c
+SOURCE          IMG_xpm.c
+SOURCE          IMG_xv.c
+SOURCE          IMG_xxx.c
+
+
