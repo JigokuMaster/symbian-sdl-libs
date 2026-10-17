@@ -1,0 +1,41 @@
+PRJ_PLATFORMS
+WINSCW GCCE//ARM4 THUMB
+
+PRJ_EXPORTS
+..\sdlapp.h						ESDL\sdlapp.h
+..\..\include\SDL.h				ESDL\SDL.h
+..\..\include\SDL_active.h		ESDL\SDL_active.h
+..\..\include\SDL_audio.h		ESDL\SDL_audio.h
+..\..\include\SDL_byteorder.h	ESDL\SDL_byteorder.h
+..\..\include\SDL_cdrom.h		ESDL\SDL_cdrom.h
+..\..\include\SDL_copying.h		ESDL\SDL_copying.h
+..\..\include\SDL_endian.h		ESDL\SDL_endian.h
+..\..\include\SDL_error.h		ESDL\SDL_error.h
+..\..\include\SDL_events.h		ESDL\SDL_events.h
+..\..\include\SDL_getenv.h		ESDL\SDL_getenv.h
+..\..\include\SDL_joystick.h	ESDL\SDL_joystick.h
+..\..\include\SDL_keyboard.h	ESDL\SDL_keyboard.h
+..\..\include\SDL_keysym.h		ESDL\SDL_keysym.h
+..\..\include\SDL_main.h		ESDL\SDL_main.h
+..\..\include\SDL_mouse.h		ESDL\SDL_mouse.h
+..\..\include\SDL_mutex.h		ESDL\SDL_mutex.h
+..\..\include\SDL_quit.h		ESDL\SDL_quit.h
+..\..\include\SDL_rwops.h		ESDL\SDL_rwops.h
+..\..\include\SDL_syswm.h		ESDL\SDL_syswm.h
+..\..\include\SDL_thread.h		ESDL\SDL_thread.h
+..\..\include\SDL_timer.h		ESDL\SDL_timer.h
+..\..\include\SDL_types.h		ESDL\SDL_types.h
+..\..\include\SDL_version.h		ESDL\SDL_version.h
+..\..\include\SDL_video.h		ESDL\SDL_video.h
+..\..\include\begin_code.h		ESDL\begin_code.h
+..\..\include\close_code.h		ESDL\close_code.h
+..\..\include\SDL_cpuinfo.h		ESDL\SDL_cpuinfo.h
+..\..\include\SDL_loadso.h		ESDL\SDL_loadso.h
+..\..\include\SDL_stdinc.h           ESDL\SDL_stdinc.h
+..\..\include\SDL_config.h           ESDL\SDL_config.h
+..\..\include\SDL_config_symbian.h           ESDL\SDL_config_symbian.h
+..\..\include\SDL_platform.h           ESDL\SDL_platform.h
+
+PRJ_MMPFILES
+.\ESDL_S60V3.mmp BUILD_AS_ARM
+

@@ -1,11 +1,24 @@
+#include "SDL_gfx.mmh"
 
+#ifdef USE_OPENC
 TARGET SDL_gfx.lib
 TARGETTYPE lib
+#else
+TARGET ESDL_gfx.lib
+TARGETTYPE lib
+#endif 
 
+
+#ifdef USE_OPENC
 MACRO OPENC
-
-USERINCLUDE ..
 SYSTEMINCLUDE /epoc32/include /epoc32/include/stdapis /epoc32/include/SDL
+#else
+SYSTEMINCLUDE /epoc32/include /epoc32/include/libc /epoc32/include/ESDL
+#endif
+USERINCLUDE ..
+
 sourcepath ..
+
 source SDL_framerate.c SDL_gfxBlitFunc.c SDL_gfxPrimitives.c SDL_imageFilter.c SDL_rotozoom.c
+
 

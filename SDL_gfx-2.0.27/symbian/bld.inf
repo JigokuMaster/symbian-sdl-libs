@@ -1,5 +1,6 @@
 PRJ_PLATFORMS
-DEFAULT
+WINSCW GCCE
+
 
 PRJ_EXPORTS
 
@@ -9,6 +10,14 @@ PRJ_EXPORTS
 ../SDL_gfxPrimitives.h SDL/SDL_gfxPrimitives.h
 ../SDL_imageFilter.h SDL/SDL_imageFilter.h
 ../SDL_rotozoom.h SDL/SDL_rotozoom.h
+
+../SDL_framerate.h ESDL/SDL_framerate.h
+../SDL_gfxBlitFunc.h ESDL/SDL_gfxBlitFunc.h
+../SDL_gfxPrimitives_font.h ESDL/SDL_gfxPrimitives_font.h
+../SDL_gfxPrimitives.h ESDL/SDL_gfxPrimitives.h
+../SDL_imageFilter.h ESDL/SDL_imageFilter.h
+../SDL_rotozoom.h ESDL/SDL_rotozoom.h
+
 
 PRJ_MMPFILES
 SDL_gfx.mmp

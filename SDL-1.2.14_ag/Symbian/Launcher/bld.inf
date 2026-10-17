@@ -1,0 +1,5 @@
+PRJ_PLATFORMS
+WINS ARMI winscw GCCE
+
+PRJ_MMPFILES
+SDLLauncher.mmp
